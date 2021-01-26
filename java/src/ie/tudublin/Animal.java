@@ -15,9 +15,9 @@ public class Animal
         return name;
     }
 
-    public void setName(String name)
+    public void setName(String n)
     {
-        this.name = name;
+        this.name = n;
     }
 
     public Animal(String name)
