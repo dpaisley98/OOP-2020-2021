@@ -19,7 +19,7 @@ public class HelloProcessing extends PApplet
 		y1 = random(0, height);
 		y2 = random(0, height);
 
-		float range = 5;
+		float range = 10;
 
 		x1dir = random(-range, range);
 		x2dir = random(-range, range);
@@ -36,7 +36,7 @@ public class HelloProcessing extends PApplet
 	
 	public void draw()
 	{	
-		strokeWeight(2);
+		strokeWeight(20);
 		stroke(c, 255, 255);
 		c = (c + 1f) % 255;
 		line(x1, y1, x2, y2);
