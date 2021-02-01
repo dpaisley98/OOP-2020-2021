@@ -1,5 +1,8 @@
 # DT228/DT282 Object Oriented Programming 2020-2021
 
+- test master
+- Monday test
+
 Resources
 ---------
 - [Install the software you will need for this module](install.md)
@@ -32,8 +35,20 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 2 - Hello Processing
+
+- Check out the HelloProcessing1 class in the repo
+- We drew the all seeing eye using the Processing drawing methods
+- if statement exercises
+
+![](https://github.com/skooter500/GP-2016-2017/blob/master/images/p1.2.png?raw=true)
+
 
 # Week 1 - Introduction
+
+## Tutorial
+- [Coding Bat](https://codingbat.com/)
+
 ## Lab
 ## Learning outcomes
 - Set up Java, Visual studio code and the Java Extensions
@@ -86,6 +101,7 @@ If you already forked the repo before the lab, you may need to update your maste
 git fetch
 git checkout master
 git pull upstream master
+git push
 ```
 
 ## Part 3 - Compiling & running Java
