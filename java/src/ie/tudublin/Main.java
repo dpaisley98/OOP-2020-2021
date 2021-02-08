@@ -28,7 +28,6 @@ public class Main
 		}//end while loop
 		System.out.println("End of program");
 
-        Cat ginger = new Cat("Ginger");
         while(ginger.getNumLives() > 0)
         {
             ginger.kill();
@@ -48,9 +47,15 @@ public class Main
         processing.core.PApplet.runSketch( a, new HelloProcessing2());
     }
 
+    public void bugZap()
+    {
+        String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new BugZap());
+    }
+
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.helloProcessing2();
+        main.bugZap();
     }
 } 
