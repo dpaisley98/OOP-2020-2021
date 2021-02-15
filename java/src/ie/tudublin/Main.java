@@ -28,12 +28,11 @@ public class Main
 		}//end while loop
 		System.out.println("End of program");
 
-        Cat ginger = new Cat("Ginger");
         while(ginger.getNumLives() > 0)
         {
-            ginger.kill();
+           // ginger.kill();
         }
-        ginger.kill();
+       // ginger.kill();
     }
 
     public void helloProcessing1()
