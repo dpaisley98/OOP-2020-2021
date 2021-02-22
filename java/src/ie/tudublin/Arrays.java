@@ -130,6 +130,20 @@ public class Arrays extends PApplet {
             }
             case 1: {
                 // Trend line
+                stroke(255);
+                textAlign(CENTER,CENTER);
+                float border = width*0.1f;
+                line(border,border,border,height-border);
+                line(border,height-border,width-border,height-border);
+                for(float f = 0; f <= 120;f += 10){
+                    float y = map(f, 0, 120, height-border, border);
+                    line(border-5,y,border,y);
+                    fill(255);
+                    text((int)f,border/2,y);
+
+                }
+                break;
+
             }
             case 2: {
                 // Pie chart
