@@ -8,7 +8,7 @@ import processing.data.TableRow;
 
 public class StarMap extends PApplet {
     int startStar=-1,endStar=-1;
-    float lX,lY,lX2,lY2,dist;
+    float lX,lY,dist;
     float border;
 
 
@@ -46,14 +46,12 @@ public class StarMap extends PApplet {
     }
 
     public void settings() {
-        size(800, 800);
+        size(1200, 800);
     }
 
 
     public void mouseClicked()
     {
-        //border= width*0.10f;
-        println("Mouse clicked");
         for(int i=0;i<stars.size();i++){
             Star s =stars.get(i);
             float x = map(s.getxG(),-5,5,border,width-border);
@@ -93,9 +91,10 @@ public class StarMap extends PApplet {
         drawGrid();
         drawStars();
         if(!(startStar==-1)){
+            stroke(255,255,0);
             line(lX,lY,mouseX,mouseY);
         }else if(endStar!=-1){
-            text("The distance is "+dist, border,height-(border/2));
+            text("The distance is "+dist+" parsecs", border,height-(border/2));
 
         }
 
